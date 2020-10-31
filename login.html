@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+     body 
+     {
+         margin: 0;
+         padding: 0;
+         background: url(images/pic70.jpg);
+         background-size: cover;
+         font-family: sans-serif;
+     }
+    .loginbox
+     {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         width: 350px;
+         height: 420px;
+         padding: 80px 40px;
+         box-sizing: border-box;
+         background: rgba(0,0,0,0.3);
+     }
+     h2 
+     {
+         margin: 0;
+         padding:0 0 20px ;
+         color: #094683;
+         text-align: center;
+     }
+     h2:hover 
+     {
+         color: orange;
+     }
+     .loginbox p 
+     {
+         padding: 0;
+         margin: 0;
+         color: #fff;
+         font-weight: bold;
+     }
+     .loginbox input 
+     {
+         width: 100%;
+         margin-bottom: 20px;
+     }
+     .loginbox input [type="text"] , .loginbox input [type="password"]
+     {
+         border: none;
+         border-bottom: 2px solid orange;
+         background: transparent;
+         outline: none;
+         height: 40px;
+         color: #fff;
+         font-size: 16px;
+     }
+     .loginbox input[type="submit"]
+     {
+         border: none;
+         outline: none;
+         height: 40px;
+         color: #fff;
+         cursor: pointer;
+         background: rgb(255, 37, 126);
+         border-radius: 20px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     .loginbox input[type="submit"]:hover 
+     {
+         background: #efed40;
+         color: #262626;
+     }
+     .loginbox a 
+     {
+         color: #fff;
+         font-size: 14px;
+         font-weight: bold;
+     }
+     ::placeholder 
+     {
+         color: rgba(255,255,255,0.5);
+     }
+     .user 
+     {
+         width:80px ;
+         height:80px ;
+         overflow: hidden;
+         position: absolute;
+         top:calc(-100px/2);
+         left: calc(50%,-70px);
+         border-radius: 50px;
+     }
+    </style>
+</head>
+<body>
+  <div class="loginbox">
+      <img src="images/l3.png" class="user">
+      <h2>Login Here</h2>
+      <form>
+          <p>Email</p>
+          <input type="text" name="" placeholder="Enter Email">
+          <p>Password</p>
+          <input type="password" name=""placeholder="Enter Password">
+          <input type="submit" name="" value="Sign in">
+          <a href="#">Forget Password</a>
+      </form>
+  </div>
+</body>
+</html>
